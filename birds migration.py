@@ -87,7 +87,7 @@ sns.heatmap(
 )
 plt.title("Important Correlation Heatmap", fontsize=16)
 plt.show()
-#####UNIT IV: EDA
+##### EDA
 
 # Summary Statistics
 df.describe()
@@ -120,7 +120,7 @@ print("Number of outliers:", len(outliers))
 #print(outliers.head())
 
 
-######UNIT V: Statistical Analysis
+###### Statistical Analysis
 from scipy import stats
 import statsmodels.api as sm
 from statsmodels.stats.outliers_influence import variance_inflation_factor
@@ -166,7 +166,7 @@ plt.figure(figsize=(14,7))
 sns.histplot(
     df['Observation_Counts'],
     bins=30,
-    color='teal'   #  different color
+    color='teal'   
 )
 
 plt.title("Distribution of Observation Counts", fontsize=16)
